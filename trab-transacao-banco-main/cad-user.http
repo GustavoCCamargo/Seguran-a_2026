@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:8000
+
+### Enviar dados do usuário
+POST {{baseUrl}}/cadastro
+Content-Type: application/json
+
+{
+    "nome": "Gustavo",
+    "senha": "SenhaSegura123!"
+}
+
+###
+POST {{baseUrl}}/cadastro
+Content-Type: application/json
+
+{
+    "nome": "Henrique",
+    "senha": "SenhaSegura123!"
+}
+
+### Login do usuário
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "nome": "Gustavo",
+    "senha": "SenhaSegura123!"
+}
+
+### Obter usuário logado
+GET {{baseUrl}}/usuario-logado
+
+
+### Logs
+GET {{baseUrl}}/logs
